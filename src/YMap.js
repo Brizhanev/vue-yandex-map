@@ -321,7 +321,7 @@ export default {
       });
     }
   },
-  beforeDestroy() {
+  beforeUnmount() {
     if (this.myMap.geoObjects) this.myMap.geoObjects.removeAll();
   },
 };
